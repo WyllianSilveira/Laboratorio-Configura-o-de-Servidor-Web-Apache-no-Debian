@@ -78,3 +78,59 @@ Outros pontos:
 
 ⚠️ Nenhuma alteração foi feita nesta configuração — já veio com o padrão definido.  
 A única modificação foi no arquivo `index.html`, que será exibido no navegador.
+
+
+## 🔹 4. Acessando os Logs do Servidor Apache
+
+### Comando
+
+```bash
+cd /var/log/apache2/
+ls
+````
+
+📸 Imagem:  
+![Listando arquivos de log do Apache](./imagens/apache2-logs.png)
+
+### Explicação
+
+O diretório `/var/log/apache2/` armazena os principais arquivos de log gerados pelo Apache. Esses registros são fundamentais para o **diagnóstico de erros**, **análise de acesso** e **monitoramento** do funcionamento do servidor.
+
+Os principais arquivos são:
+
+- **access.log**: registra todas as requisições feitas ao servidor (IP, navegador, status HTTP, etc.).
+- **error.log**: armazena mensagens de erro geradas pelo Apache.
+- **other_vhosts_access.log**: acessos relacionados a outros VirtualHosts configurados.
+
+# Analisando o Arquivo access.log
+
+### Comando
+
+```bash
+cat access.log
+````
+
+##Explicação
+Este comando exibe o conteúdo do arquivo access.log, onde cada linha representa uma requisição HTTP recebida.
+
+📸 Imagem:  
+![Verificando arquivos de log do Apache](./imagens/verificando_apache2-logs.png)
+
+### Exemplo de linha registrada:
+192.168.0.204 - - [21/Sep/2025:19:20:35 -0300] "GET / HTTP/1.1" 200 3383 ...
+
+###Informações contidas:
+
+IP do cliente
+
+Data e hora do acesso
+
+Método e rota acessada (GET /)
+
+Código de status HTTP (ex: 200 = sucesso, 404 = não encontrado)
+
+Agente de usuário (navegador e sistema operacional)
+
+Esses dados permitem validar se o servidor respondeu corretamente às requisições e identificar erros comuns, como o 404 ao tentar carregar /favicon.ico.
+
+
