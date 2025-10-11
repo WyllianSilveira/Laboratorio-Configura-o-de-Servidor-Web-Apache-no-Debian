@@ -47,7 +47,7 @@ ls
 📸 Imagem:
 ![Diretório de configuração do Apache2](./imagens/diretorio-apache2.png)
 
-## 🔧 Explorando o Diretório de Configuração do Apache2
+🔍 **Explicação rápida:**  
 
 Agora, ao executar o comando `cd /etc/apache2/`, você acessa o diretório de configuração principal do Apache2. O comando `ls` lista os arquivos e pastas importantes, como `apache2.conf`, `ports.conf`, e os 
 diretórios `sites-enabled` e `mods-enabled`, que controlam a configuração dos sites e módulos ativos no servidor.
@@ -65,7 +65,7 @@ cat 000-default.conf | more
 📸 Imagem:  
 ![Configuração padrão do Apache](./imagens/000-default-conf.png)
 
-### Explicação
+🔍 **Explicação rápida:**  
 
 Neste passo, foi acessado o arquivo `000-default.conf`, responsável pela configuração do **VirtualHost padrão** do Apache na porta 80.
 
@@ -92,7 +92,7 @@ ls
 📸 Imagem:  
 ![Listando arquivos de log do Apache](./imagens/apache2-logs.png)
 
-### Explicação
+🔍 **Explicação rápida:**  
 
 O diretório `/var/log/apache2/` armazena os principais arquivos de log gerados pelo Apache. Esses registros são fundamentais para o **diagnóstico de erros**, **análise de acesso** e **monitoramento** do funcionamento do servidor.
 
@@ -110,7 +110,7 @@ Os principais arquivos são:
 cat access.log
 ````
 
-##Explicação
+🔍 **Explicação rápida:**  
 Este comando exibe o conteúdo do arquivo access.log, onde cada linha representa uma requisição HTTP recebida.
 
 📸 Imagem:  
