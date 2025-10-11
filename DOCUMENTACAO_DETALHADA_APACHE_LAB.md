@@ -51,6 +51,30 @@ ls
 
 Agora, ao executar o comando `cd /etc/apache2/`, você acessa o diretório de configuração principal do Apache2. O comando `ls` lista os arquivos e pastas importantes, como `apache2.conf`, `ports.conf`, e os 
 diretórios `sites-enabled` e `mods-enabled`, que controlam a configuração dos sites e módulos ativos no servidor.
+<br><br>
 
+## 🔹 3. Visualizando o VirtualHost Padrão
 
+### Comando
 
+```bash
+cd /etc/apache2/sites-available/
+cat 000-default.conf | more
+````
+
+📸 Imagem:  
+![Configuração padrão do Apache](./imagens/000-default-conf.png)
+
+### Explicação
+
+Neste passo, foi acessado o arquivo `000-default.conf`, responsável pela configuração do **VirtualHost padrão** do Apache na porta 80.
+
+A diretiva `DocumentRoot` aponta para `/var/www/html`, indicando o diretório onde o site será hospedado. Esse caminho é utilizado para carregar o `index.html` padrão do Apache.
+
+Outros pontos:
+
+- **ServerAdmin**: define o e-mail do administrador.  
+- **ErrorLog** e **CustomLog**: indicam os arquivos de log.
+
+⚠️ Nenhuma alteração foi feita nesta configuração — já veio com o padrão definido.  
+A única modificação foi no arquivo `index.html`, que será exibido no navegador.
