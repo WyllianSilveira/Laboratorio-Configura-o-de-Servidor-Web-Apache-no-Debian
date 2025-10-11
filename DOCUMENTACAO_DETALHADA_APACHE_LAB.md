@@ -33,7 +33,7 @@ Comando instala o servidor Apache2 no Debian, resolvendo dependências automatic
 
 📸 Imagem: 
 ![Instalação do Apache2](./imagens/instalacao-apache2.png)
-<br.<br>
+<br><br>
 
 ## 🔹 2. Navegando pelo Diretório de Configuração do Apache2
 
