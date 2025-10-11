@@ -78,6 +78,7 @@ Outros pontos:
 
 ⚠️ Nenhuma alteração foi feita nesta configuração — já veio com o padrão definido.  
 A única modificação foi no arquivo `index.html`, que será exibido no navegador.
+<br><br>
 
 
 ## 🔹 4. Acessando os Logs do Servidor Apache
@@ -119,7 +120,7 @@ Este comando exibe o conteúdo do arquivo access.log, onde cada linha representa
 ### Exemplo de linha registrada:
 192.168.0.204 - - [21/Sep/2025:19:20:35 -0300] "GET / HTTP/1.1" 200 3383 ...
 
-###Informações contidas:
+### Informações contidas:
 
 IP do cliente
 
