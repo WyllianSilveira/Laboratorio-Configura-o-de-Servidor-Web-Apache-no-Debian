@@ -147,7 +147,7 @@ ss -tlnp
 
 📸 Imagem: Verificação das portas e processos em escuta do Apache2  
 
-![Verificação do serviço Apache2](imagens/Verificacao_do_servico_Apache2.png) 
+![Verificação serviço Apache2](imagens/Verificacao_do_servico_Apache2.png) 
 
 
 🔍 **Explicação rápida:**
@@ -170,6 +170,44 @@ Essa validação é fundamental antes de realizar testes via navegador ou ajusta
 
 Deseja que eu siga agora com o **passo 6**, na sequência lógica do laboratório (ex: testar acesso via navegador local ou editar o `index.html`)?  
 Assim mantenho o mesmo padrão até o final do documento.
+<br><br>
+
+##  🔹 6. Diretório da Página Web (index.html)
+
+Comando:
+```bash
+cd /var/www/html/
+````
+
+
+📸 Imagem: Acessando o diretório padrão de hospedagem do Apache  
+![Diretório do index.html](imagens/diretorio-index-html.png)
+
+🔍 **Explicação rápida:**
+
+Neste passo, navegamos até o diretório **/var/www/html/**, que é o **diretório raiz padrão** utilizado pelo Apache para armazenar as páginas web públicas do servidor.
+
+Os comandos executados foram:
+
+- `cd var` → acessa o diretório **/var**, onde ficam pastas de dados e logs de serviços do sistema.  
+- `cd www` → acessa a pasta dedicada a serviços web.  
+- `cd html` → entra no diretório onde ficam os arquivos publicados.  
+- `ls` → lista o conteúdo, mostrando o arquivo **index.html**.
+
+🧩 **Detalhes importantes:**
+- O arquivo **index.html** é a página inicial exibida quando o servidor é acessado via navegador (ex: `http://localhost` ou `http://IP-do-servidor`).
+- É possível editar este arquivo com um editor de texto (como `nano` ou `vim`) para personalizar o conteúdo exibido no navegador.
+- Este diretório é definido pela diretiva `DocumentRoot` no arquivo `/etc/apache2/sites-available/000-default.conf`.
+
+🧠 **Análise Técnica:**
+O caminho **/var/www/html/** representa a raiz pública do site padrão do Apache.  
+Esse é o local onde são armazenados os arquivos HTML, CSS, imagens e outros recursos que compõem o site.  
+Manter a estrutura organizada e com permissões adequadas é essencial para segurança e manutenção do ambiente.
+
+---
+
+Quer que eu monte agora o **Passo 7** (edição e teste do `index.html` no navegador)?  
+Posso incluir o comando `nano index.html`, a explicação da edição e a visualização da página via navegador.
 
 
 
