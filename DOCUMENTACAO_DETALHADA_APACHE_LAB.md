@@ -146,7 +146,9 @@ ss -tlnp
 
 
 📸 Imagem: Verificação das portas e processos em escuta do Apache2  
-![Verificação do serviço Apache2](imagens/Verificacao_do serviço_Apache2.png) 
+
+![Verificação do serviço Apache2](./imagens/Verificacao_do servico_Apache2.png) 
+
 
 🔍 **Explicação rápida:**
 
