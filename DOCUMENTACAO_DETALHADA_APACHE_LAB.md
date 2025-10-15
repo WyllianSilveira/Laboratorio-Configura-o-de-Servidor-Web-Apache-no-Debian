@@ -44,7 +44,7 @@ cd /etc/apache2/
 ls
 ````
 
-📸 Imagem:
+📸 Imagem: Listando diretório /etc/apache2
 ![Diretório de configuração do Apache2](./imagens/diretorio-apache2.png)
 
 🔍 **Explicação rápida:**  
@@ -62,7 +62,7 @@ cd /etc/apache2/sites-available/
 cat 000-default.conf | more
 ````
 
-📸 Imagem:  
+📸 Imagem: Exibindo conteúdo do arquivo 000-default.conf
 ![Configuração padrão do Apache](./imagens/000-default-conf.png)
 
 🔍 **Explicação rápida:**  
@@ -90,7 +90,7 @@ cd /var/log/apache2/
 ls
 ````
 
-📸 Imagem:  
+📸 Imagem: Listando arquivos de log em /var/log/apache2
 ![Listando arquivos de log do Apache](./imagens/apache2-logs.png)
 
 🔍 **Explicação rápida:**  
@@ -114,7 +114,7 @@ cat access.log
 🔍 **Explicação rápida:**  
 Este comando exibe o conteúdo do arquivo access.log, onde cada linha representa uma requisição HTTP recebida.
 
-📸 Imagem:  
+📸 Imagem: Visualizando conteúdo do access.log
 ![Verificando arquivos de log do Apache](./imagens/verificando_apache2-logs.png)
 
 ### Exemplo de linha registrada:
