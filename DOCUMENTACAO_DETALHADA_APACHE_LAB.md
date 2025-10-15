@@ -201,3 +201,27 @@ Manter a estrutura organizada e com permissões adequadas é essencial para segu
 <br><br>
 
 
+## 🔹 7. Página Web Acessível via Navegador no Windows
+
+📸 Imagem: Página web acessada a partir do Windows  
+![Página web hospedada no servidor Apache](./imagens/pagina-web-windows.png)
+
+🔍 **Explicação rápida:**
+
+Neste passo, validamos o funcionamento do **servidor Apache** acessando a página hospedada no Debian por meio de um **navegador no sistema Windows**, utilizando o endereço IP da máquina virtual (exemplo: `http://192.168.0.186`).
+
+A página personalizada `index.html` foi carregada corretamente, confirmando que:
+
+- O serviço **Apache2** está ativo e respondendo na porta **80** (HTTP).  
+- O **acesso remoto** entre as máquinas (Windows → Debian) está funcionando.  
+- O conteúdo HTML criado foi publicado com sucesso no diretório `/var/www/html/`.
+
+🧩 **Detalhes técnicos:**
+- O navegador exibe o título **“Lab Linux Server – Apache”**, indicando que o arquivo HTML foi editado conforme o objetivo do laboratório.  
+- O aviso “Não seguro” é esperado, pois o acesso está sendo feito via HTTP (sem certificado SSL).  
+- A comunicação ocorre pela rede interna do VirtualBox, utilizando um **adaptador de rede em modo Bridge** ou **Rede Interna (Host-Only)**.
+
+🧠 **Análise Técnica:**
+A exibição correta da página confirma a **entrega do conteúdo web** pelo Apache.  
+Essa etapa fecha o ciclo básico de instalação e validação de um **servidor HTTP funcional** no ambiente Debian.  
+
