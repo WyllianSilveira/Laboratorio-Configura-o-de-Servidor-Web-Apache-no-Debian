@@ -165,12 +165,8 @@ Na saída exibida, é possível identificar:
 🧠 **Análise Técnica:**
 A presença do processo `apache2` escutando na porta 80 confirma que o servidor web está operacional e acessível para conexões HTTP.  
 Essa validação é fundamental antes de realizar testes via navegador ou ajustar configurações de VirtualHosts.
-
----
-
-Deseja que eu siga agora com o **passo 6**, na sequência lógica do laboratório (ex: testar acesso via navegador local ou editar o `index.html`)?  
-Assim mantenho o mesmo padrão até o final do documento.
 <br><br>
+
 
 ##  🔹 6. Diretório da Página Web (index.html)
 
@@ -203,11 +199,6 @@ Os comandos executados foram:
 O caminho **/var/www/html/** representa a raiz pública do site padrão do Apache.  
 Esse é o local onde são armazenados os arquivos HTML, CSS, imagens e outros recursos que compõem o site.  
 Manter a estrutura organizada e com permissões adequadas é essencial para segurança e manutenção do ambiente.
-
----
-
-Quer que eu monte agora o **Passo 7** (edição e teste do `index.html` no navegador)?  
-Posso incluir o comando `nano index.html`, a explicação da edição e a visualização da página via navegador.
-
+<br><br>
 
 
