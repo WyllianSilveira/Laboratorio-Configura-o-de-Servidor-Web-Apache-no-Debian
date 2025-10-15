@@ -31,7 +31,7 @@ apt-get install apache2
 Explicação
 Comando instala o servidor Apache2 no Debian, resolvendo dependências automaticamente e instalando pacotes como apache2-bin, apache2-data, entre outros.
 
-📸 Imagem: 
+📸 Imagem: Instalação do Apache2 no Debian
 ![Instalação do Apache2](./imagens/instalacao-apache2.png)
 <br><br>
 
