@@ -133,5 +133,41 @@ Código de status HTTP (ex: 200 = sucesso, 404 = não encontrado)
 Agente de usuário (navegador e sistema operacional)
 
 Esses dados permitem validar se o servidor respondeu corretamente às requisições e identificar erros comuns, como o 404 ao tentar carregar /favicon.ico.
+<br><br>
+
+
+##🔹 5. Verificando o Serviço Apache2 em Execução
+
+Comandos:
+```bash
+ss -tl
+ss -tlnp
+````
+
+
+📸 Imagem: Verificação das portas e processos em escuta do Apache2  
+![Verificação do serviço Apache2](./imagens/Verificação_do serviço_Apache2.png)
+
+🔍 **Explicação rápida:**
+
+Neste passo, utilizamos o comando `ss` (socket statistics) para verificar os **serviços e portas que estão escutando conexões** na máquina.
+
+- O comando `ss -tl` lista as portas TCP em modo *listening*, ou seja, prontas para receber conexões.
+- O comando `ss -tlnp` adiciona as opções `n` (mostra números de portas em vez de nomes) e `p` (exibe o processo associado à porta), fornecendo uma visão detalhada dos serviços ativos.
+
+Na saída exibida, é possível identificar:
+
+- A porta **:80** (HTTP), associada ao processo **apache2**, confirmando que o serviço está ativo e aguardando conexões.
+- Outras portas como **:22** (SSH), **:139** e **:445** correspondem a serviços de rede e compartilhamento (Samba), comuns em ambientes de administração e testes.
+
+🧠 **Análise Técnica:**
+A presença do processo `apache2` escutando na porta 80 confirma que o servidor web está operacional e acessível para conexões HTTP.  
+Essa validação é fundamental antes de realizar testes via navegador ou ajustar configurações de VirtualHosts.
+
+---
+
+Deseja que eu siga agora com o **passo 6**, na sequência lógica do laboratório (ex: testar acesso via navegador local ou editar o `index.html`)?  
+Assim mantenho o mesmo padrão até o final do documento.
+
 
 
