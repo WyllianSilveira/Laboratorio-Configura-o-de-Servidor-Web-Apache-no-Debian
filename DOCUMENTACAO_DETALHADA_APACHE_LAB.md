@@ -136,7 +136,7 @@ Esses dados permitem validar se o servidor respondeu corretamente às requisiç�
 <br><br>
 
 
-##🔹 5. Verificando o Serviço Apache2 em Execução
+## 🔹 5. Verificando o Serviço Apache2 em Execução
 
 Comandos:
 ```bash
@@ -146,7 +146,7 @@ ss -tlnp
 
 
 📸 Imagem: Verificação das portas e processos em escuta do Apache2  
-![Verificação do serviço Apache2](./imagens/Verificação_do serviço_Apache2.png)
+![Verificação do serviço Apache2](imagens/verificando_apache2-logs.png)
 
 🔍 **Explicação rápida:**
 
