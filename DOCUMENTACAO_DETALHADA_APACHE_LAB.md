@@ -147,7 +147,7 @@ ss -tlnp
 
 📸 Imagem: Verificação das portas e processos em escuta do Apache2  
 
-![Verificação serviço Apache2](imagens/Verificacao_do_servico_Apache2.png) 
+![Verificacao serviço Apache2](imagens/Verificacao_do_servico_Apache2.png) 
 
 
 🔍 **Explicação rápida:**
@@ -188,7 +188,6 @@ Os comandos executados foram:
 - `cd var` → acessa o diretório **/var**, onde ficam pastas de dados e logs de serviços do sistema.  
 - `cd www` → acessa a pasta dedicada a serviços web.  
 - `cd html` → entra no diretório onde ficam os arquivos publicados.  
-- `ls` → lista o conteúdo, mostrando o arquivo **index.html**.
 
 🧩 **Detalhes importantes:**
 - O arquivo **index.html** é a página inicial exibida quando o servidor é acessado via navegador (ex: `http://localhost` ou `http://IP-do-servidor`).
